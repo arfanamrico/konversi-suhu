@@ -1,0 +1,49 @@
+def celcius ():
+  c = int(input('Suhu dalam celcius: '))
+  c_r = (4/5) * c
+  c_f = (9/5) * c + 32
+  c_k = c + 273
+  print('suhu dalam Reamur:',c_r,'R')
+  print('suhu dalam Fahrenheit:',c_f,'F')
+  print('suhu dalam Kelvin:',c_k,'K')
+
+def reamur ():
+  r = int(input('Suhu dalam Reamur: '))
+  r_c = (5/4) * r
+  r_f = (9/4) * r + 32
+  r_k = (5/4) * r + 273
+  print('suhu dalam Celcius:',r_c,'C')
+  print('suhu dalam Fahrenheit:',r_f,'F')
+  print('suhu dalam Kelvin:',r_k,'K')
+
+def fahrenheit ():
+  f = int(input('Suhu dalam Fahrenheit: '))
+  f_c = (5/9) * (f - 32)
+  f_r = (4/9) * (f - 32)  
+  f_k = (5/9) * ( f - 32) + 273
+  print('suhu dalam Celcius:',f_c,'C')
+  print('suhu dalam Reamur:',f_r,'R')
+  print('suhu dalam Kelvin:',f_k,'K')
+
+def kelvin ():
+  k = int(input('Suhu dalam Kelvin: '))
+  k_c = k - 273
+  k_r = (4/5) * (k - 273)
+  k_f = (9/5) * (k - 273) + 32
+  print('suhu dalam Celcius:',k_c,'C')
+  print('suhu dalam Reamur:',k_r,'R')
+  print('suhu dalam Fahrenheit:',k_f,'F')
+
+while True :
+  pilihan = int(input('pilih satuan suhu 1.Celcius 2.Reamur 3.Fahrenheit 4.Kelvin 5.Keluar: '))
+  if pilihan == 1 :
+    celcius()
+  elif pilihan == 2 :
+    reamur()
+  elif pilihan == 3 :
+    fahrenheit()
+  elif pilihan == 4 :
+    kelvin()
+  elif pilihan == 5 :
+    print("ma'assalamah")
+    break
